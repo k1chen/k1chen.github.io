@@ -8,12 +8,23 @@
   <script type=""text/javascript" src="js/script.js"></script>
   <title>Kenneth Chen</title>
 </head>
+
 <body>
-  <div class ="Title">
-      <h1>Hi there! I'm Kenneth.</h1>
+  <div class ="banner">
+      <h1><span id="type"></span></h1>
   </div>
 
-  <div class ="About">
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed("#type", {
+      strings: ['Hi! I\'m Kenneth.'],
+      typeSpeed: 50,
+    })
+  </script>
+  
+
+  <div class ="about">
       <h3>I'm a student at Boston College studying computer science. My interests are primarily in web development, but I am currently learning SwiftUI. Outside of the classroom, I'm an avid photographer, specializing in sports and concert photography, but enthusiastic in all other genres. Check out my work below!</h3>
   </div>
 
@@ -28,6 +39,8 @@
       </li>
     </ul>
   </div>
+
+  
 </body>
 <footer>
   <div class ="Twitter">
@@ -42,4 +55,5 @@
     <button>Email</button>
   </div>
 </footer>
+
 </html>
