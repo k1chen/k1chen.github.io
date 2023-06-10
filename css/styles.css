@@ -3,3 +3,12 @@
   text-align: center;
   justify-content: center;
 }
+
+.about{
+  margin: auto;
+  font-family: 'cg-times-bold', sans-serif;
+}
+
+body{
+  background-color: azure;
+}
