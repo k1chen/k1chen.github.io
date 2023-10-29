@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css">
-  <script type=""text/javascript" src="js/script.js"></script>
-  <link href="https://www.dafontfree.net/embed/Y2ctdGltZXMtYm9sZCZkYXRhLzIzL2MvMTE3OTI4L0NHVGltZXNCb2xkLnR0Zg" rel="stylesheet" type="text/css"/>
-  <title>Kenneth Chen</title>
-</head>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kenneth Chen</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.glitch.global/af39c136-65c7-49f2-962a-3ad378a15b56/favicon-32x32.png?v=1697511395154"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div
+        class="profile-pic"
+        style="
+          background-image: url('https://cdn.glitch.global/af39c136-65c7-49f2-962a-3ad378a15b56/IMG_0266.JPG?v=1697511480328');
+        "
+      ></div>
+      <div class="description">
+        <h1>Kenneth Chen</h1>
+      </div>
+      <div class="profile-icons">
+        <a href="https://www.linkedin.com/in/chenaun" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:chenaun@bc.edu">
+          <i class="far fa-envelope"></i>
+        </a>
+      </div>
+      <div class="profile-description">
+        <p>
+          Hi! I'm a junior studying Computer Science at Boston College. My
+          academic interests lie in web and mobile app development. Outside of
+          school, I enjoy photography of all kinds, ranging from sports to
+          portraiture and landscape. Please feel free to reach out to me by
+          clicking either of the buttons above!
+        </p>
+      </div>
+      <div class="work-experience">
+        <div
+          class="work-card"
+          onclick="window.open('https://www.bc.edu/bc-web/offices/its.html', '_blank')"
 
-<body>
-  <div class ="banner">
-      <h1><span id="type"></span></h1>
-  </div>
-
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-  <script>
-    var typed = new Typed("#type", {
-      strings: ['Hi! I\'m Kenneth.'],
-      typeSpeed: 50,
-    })
-  </script>
-  
-
-  <div class ="about">
-      <h3>I'm a student at Boston College studying computer science. My interests are primarily in web development, but I am currently learning Swift. Outside of the classroom, I'm an avid photographer, specializing in sports and concert photography, but enthusiastic in all other genres. Check out my work below!</h3>
-  </div>
-
-  <div class ="container">
-    <ul class ="sample-photo-slideshow">
-      <li class ="slide">
-        <!--Add sample image-->
-      </li>
-      
-      <li class="slide">
-        <!--Add sample image-->
-      </li>
-    </ul>
-  </div>
-
-  
-</body>
-<footer>
-  <div class ="Twitter">
-    <form action="https://www.twitter.com/klchen_" method="get" target="_blank">
-      <button type="submit">Twitter</button>
-   </form>
-  </div>
-
-  <div class ="GitHub">
-    <form action="https://www.github.com/k1chen" method="get" target="_blank">
-      <button type="submit">GitHub</button>
-   </form>
-  </div>
-
-  <div class ="Email">
-    <form action="mailto:chenaun@bc.edu" method="get" target="_blank">
-      <button type="submit">Email</button>
-   </form>
-  </div>
-</footer>
-
+        >
+          <div class="work-logo"></div>
+          <div class="work-caption">
+            <p>Boston College ITS Department</p>
+            <p>Swift App Developer</p>
+            <p>September 2023 - Present</p>
+          </div>
+        </div>
+        <div
+          class="work-card"
+          onclick="window.location.href='https://bcheights.com/'"
+        >
+          <div class="work-logo"></div>
+          <div class="work-caption">
+            <p>Boston College Heights Newspaper</p>
+            <p>Front-End Web Developer</p>
+            <p>February 2023 - Present</p>
+          </div>
+        </div>
+        <div
+          class="work-card"
+          onclick="window.location.href='https://www.nyc.gov/site/finance/index.page'"
+        >
+          <div class="work-logo"></div>
+          <div class="work-caption">
+            <p>NYC Department of Finance</p>
+            <p>Full-Stack Development Intern</p>
+            <p>June 2023 - August 2023</p>
+          </div>
+        </div>
+        <div
+          class="work-card"
+          onclick="window.location.href='https://www.nyc.gov/assets/dsny/site/home'"
+        >
+          <div class="work-logo"></div>
+          <div class="work-caption">
+            <p>NYC Department of Sanitation</p>
+            <p>Full-Stack Development Intern</p>
+            <p>June 2022 - August 2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

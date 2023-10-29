@@ -1,14 +1,102 @@
-.banner{
-  color:rgb(16, 75, 56);
-  text-align: center;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
-.about{
-  margin: auto;
-  font-family: 'cg-times-bold', sans-serif;
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 100px; 
 }
 
-body{
-  background-color: azure;
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center center; /* Center the background image */
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 20px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.profile-icons {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.profile-icons a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.profile-icons i:hover {
+  color: #0077b5; /* LinkedIn icon hover color */
+}
+
+.profile-description {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.work-experience {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.work-card {
+  width: 48%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.work-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s;
+}
+
+.work-logo {
+  width: 100%;
+  height: 100px;
+  background-image: url("company-logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.work-caption {
+  padding: 10px;
+  text-align: center;
 }
