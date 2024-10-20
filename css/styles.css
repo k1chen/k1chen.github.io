@@ -1,110 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
-  height: 100%;
+  font-family: "Satoshi", sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
-  font-family: "Roboto Slab", serif;
-}
-
-body {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-}
-
-.container {
-  max-width: 800px;
   width: 100%;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 1px 0 10px 0px;
+  font-size: 20px;
+  width: 100%;
+}
+
+header nav ul li {
+  display: inline;
+  list-style-type: none;
   padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  background-color: #fff;
-  margin-top: 100px; 
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 0 auto;
-  background-size: cover;
-  background-position: center center; 
-  margin-top: 65px;
-}
-
-h1 {
-  font-size: 36px;
-  margin: 20px 0;
-  color: #333;
+  padding-left: 0px;
   font-weight: bold;
 }
 
-.profile-icons {
-  font-size: 24px;
-  margin: 10px 0;
+nav ul {
+  padding-left: 19px;
 }
 
-.profile-icons a {
-  margin: 0 10px;
-  color: #333;
+a,
+a:visited {
   text-decoration: none;
+  color: #333333;
 }
 
-.profile-icons i:hover {
-  color: #0077b5; 
+a:hover {
+  color: #00008b;
 }
 
-.profile-description {
-  font-size: 18px;
-  margin: 10px 0;
+.news-section {
+  margin: 0;
+  padding: 0;
 }
 
-.work-experience {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
+.news-section h1 {
+  margin: 0;
+  padding: 0 0 10px 0;
 }
 
-.work-card {
-  width: 48%;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.work-card:hover {
-  transform: scale(1.02);
-  transition: transform 0.2s;
-}
-
-.work-logo {
+.news-section,
+.news-table {
   width: 100%;
-  height: 100px; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  overflow: hidden; 
-  padding-top: 20px; 
 }
 
-.work-logo img {
-  max-width: 100%; 
-  max-height: 100%; 
-  object-fit: contain; 
-  background-color: #FFFFFF; 
+.news-table {
+  margin-top: 0;
 }
 
-.work-caption {
-  padding: 10px;
-  text-align: center;
+.profile-information {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.profile-photo {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.data-article-img {
+  width: 1000px;
+  height: auto;
+}
+
+.email i,
+.github i,
+.linkedin i {
+  font-size: 24px;
+  color: #000000;
+}
+
+.email a:hover i {
+  color: #d44638;
+}
+
+.github a:hover i {
+  color: #333333;
+}
+
+.linkedin a:hover i {
+  color: #0077b5;
+}
+
+.projects a {
+  color: #0077b5;
+  font-weight: bold;
+}
+
+.projects a:hover {
+  color: #00008b;
+}
+
+.project1-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project1-title {
+  margin-left: 19px;
+}
+
+.project-image1 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project2-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project2-title {
+  margin-left: 19px;
+}
+
+.project-image-2 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+p span {
+  margin-right: 15px;
+}
+
+@media (min-width: 769px) {
+  .profile-information {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .project1-container {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .project2-container {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-information {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+  }
+  .project1-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+  }
+  .project2-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+  }
 }
