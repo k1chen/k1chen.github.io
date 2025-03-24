@@ -1,179 +1,125 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html,
 body {
-  font-family: "Satoshi", sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f2f0e4;
+  color: #1a1a1a;
+  line-height: 1.6;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
   width: 100%;
+  gap: 4rem;
 }
 
-header {
-  background-color: #f0f0f0;
-  padding: 1px 0 10px 0px;
-  font-size: 20px;
-  width: 100%;
-}
-
-header nav ul li {
-  display: inline;
-  list-style-type: none;
-  padding: 20px;
-  padding-left: 0px;
-  font-weight: bold;
-}
-
-nav ul {
-  padding-left: 19px;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-  color: #333333;
-}
-
-a:hover {
-  color: #00008b;
-}
-
-.news-section {
-  margin: 0;
-  padding: 0;
-}
-
-.news-section h1 {
-  margin: 0;
-  padding: 0 0 10px 0;
-}
-
-.news-section,
-.news-table {
-  width: 100%;
-}
-
-.news-table {
-  margin-top: 0;
-}
-
-.profile-information {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  padding: 20px;
+.sidebar {
+  flex: 1;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 2rem;
+  text-align: center;
 }
 
 .profile-photo {
-  width: 300px;
-  height: auto;
-  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.data-article-img {
-  width: 1000px;
-  height: auto;
+.sidebar h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
 }
 
-.email i,
-.github i,
-.linkedin i {
-  font-size: 24px;
-  color: #000000;
+.subtitle {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
 }
 
-.email a:hover i {
-  color: #d44638;
+.social-links a {
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.2s ease;
 }
 
-.github a:hover i {
-  color: #333333;
+.social-links a:hover {
+  color: #0070f3;
 }
 
-.linkedin a:hover i {
-  color: #0077b5;
+.resume-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
 }
 
-.projects a {
-  color: #0077b5;
-  font-weight: bold;
+.resume-link:hover {
+  color: #0070f3;
 }
 
-.projects a:hover {
-  color: #00008b;
+.content {
+  flex: 3;
 }
 
-.project1-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  padding: 20px;
+.content section {
+  margin-bottom: 3rem;
 }
 
-.project1-title {
-  margin-left: 19px;
+.content h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.25rem;
+  font-weight: 600;
 }
 
-.project-image1 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+.content ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-.project2-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  padding: 20px;
+.content li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
 }
 
-.project2-title {
-  margin-left: 19px;
+.project h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
 }
 
-.project-image-2 img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+.project p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1.5rem;
 }
 
-p span {
-  margin-right: 15px;
+.project a {
+  color: #1a1a1a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-@media (min-width: 769px) {
-  .profile-information {
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-  }
-  .project1-container {
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-  }
-  .project2-container {
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .profile-information {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-  }
-  .project1-container {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-  }
-  .project2-container {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-  }
+.project a:hover {
+  color: #0070f3;
 }

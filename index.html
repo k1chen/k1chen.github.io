@@ -1,135 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenneth Chen</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=satoshi@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1uhIWlj_7HoxiHnubiFdzhBUYEjBa-t84/view?usp=sharing"
-              target="_blank"
-              >Resume</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="profile-information">
-      <section class="image-and-caption">
+    <div class="container">
+      <aside class="sidebar">
         <img
           class="profile-photo"
           src="img/KennethC_Headshot.JPG"
-          alt="Kenneth's Profile Picture"
+          alt="Kenneth's Photo"
         />
         <h1>Kenneth Chen</h1>
-        <h3>
-          Senior at Boston College <br />
-          Candidate for Computer Science B.A.
-        </h3>
-
-        <p>
-          <span class="email">
-            <a href="mailto: chenaun@bc.edu" target="_blank"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </span>
-          <span class="github">
-            <a href="https://github.com/k1chen" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </span>
-          <span class="linkedin">
-            <a href="https://www.linkedin.com/in/chenaun/" target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </span>
+        <p class="subtitle">
+          Senior at Boston College<br />Computer Science B.A. Candidate
         </p>
-        <div class="news-section">
-          <h1>Experience</h1>
-          <table class="news-table">
-            <tr>
-              <td>Internship at Trinity Church Wall Street</td>
-              <td>June 2024 - August 2024</td>
-            </tr>
-            <tr>
-              <td>iOS Development work with Boston College IT Services</td>
-              <td>September 2023 - August 2023</td>
-            </tr>
-            <tr>
-              <td>Internship at NYC Department of Finance</td>
-              <td>June 2023 - August 2023</td>
-            </tr>
-            <tr>
-              <td>
-                Web Development work with Boston College Heights Newspaper
-              </td>
-              <td>February 2023 - February 2024</td>
-            </tr>
-            <tr>
-              <td>Internship at NYC Department of Sanitation</td>
-              <td>June 2022 - August 2022</td>
-            </tr>
-          </table>
+        <div class="social-links">
+          <a href="mailto:chenaun@bc.edu"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a href="https://github.com/k1chen" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/chenaun/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://kennethc.bearblog.dev/blog/" target="_blank">
+            <i class="fa-solid fa-pen"></i>
+          </a>
         </div>
-      </section>
-      <section class="about-and-projects">
-        <div class="about">
-          <h1>About</h1>
-          <p>
-            Hi, I'm Kenneth! I'm currently a senior studying computer science at
-            Boston College. My academic interests lie in web and mobile app
-            development. Outside of school, I enjoy photography of all kinds,
-            ranging from sports to portraiture and landscape. Please feel free
-            to reach out to me by clicking either of the buttons under my
-            profile!
-          </p>
-        </div>
+        <a
+          class="resume-link"
+          href="https://drive.google.com/file/d/1uhIWlj_7HoxiHnubiFdzhBUYEjBa-t84/view?usp=sharing"
+          target="_blank"
+          >View Resume</a
+        >
+      </aside>
 
-        <div class="projects">
-          <h1>Projects</h1>
-          <h3>
-            <a href="https://kennethc.me/Data-Driven-Article/" target="_blank">Data-Driven Article</a>
-          </h3>
+      <main class="content">
+        <section class="about">
+          <h2>About</h2>
           <p>
-            This was a project built with D3.js and Vega-Lite for CSCI3311 Data
-            Visualization. I was given a dataset from an examination done on the
-            HCS EdConnect internet broadband initiative in the local community
-            of Chattanooga, Tennessee. Users are able to utilize a brushable
-            scatterplot in which each point in the scatterplot would represent a
-            family in the dataset. The subsequent stacked bar chart below the
-            scatterplot would adjust based on the brushed-upon points. Below
-            that, a pie chart would also automatically adjust. The key takeaway
-            from this project and its data was that there are indications of a
-            broader disproportionate pattern of low-income statuses affecting
-            families of color than not.
+            Hi, I’m Kenneth — a senior at Boston College studying Computer
+            Science. I’m passionate about data visualization, statistics, and
+            financial markets, with a particular interest in using software
+            tools to uncover insights and tell meaningful stories with data.
+            Outside the classroom, I enjoy photography in all its forms — from
+            sports and portraits to landscapes — capturing the world one frame
+            at a time.
           </p>
+        </section>
 
-          <h3>
-            <a href="https://design-and-redesign-kennethc.glitch.me/" target="_blank">Design and Redesign</a>
-          </h3>
-          <p>
-            This was a project built with HTML, CSS and Tableau to visualize
-            student enrollment in specific majors at Boston College. Data was
-            sorted data on Tableau by year for the columns, filtered for the top
-            five over the given years, and the enrollment count was as the rows.
-            In addition, I redesigned Florence Nightingale's famous Coxcomb
-            chart to better visualize the causes of mortality in the Army from
-            April 1855 to March 1856.
-          </p>
-        </div>
-      </section>
-    </main>
+        <section class="experience">
+          <h2>Experience</h2>
+          <ul>
+            <li>
+              <strong>Trinity Church Wall Street</strong> — Data Engineering
+              Internship (June–Aug 2024)
+            </li>
+            <li>
+              <strong>Boston College Information Technology Services</strong> —
+              iOS Developer (Sept 2023–Aug 2023)
+            </li>
+            <li>
+              <strong>NYC Department of Finance</strong> — Software Engineering
+              Internship (June–Aug 2023)
+            </li>
+            <li>
+              <strong>Boston College Heights Newspaper</strong> — Web Developer
+              (Feb 2023–Feb 2024)
+            </li>
+            <li>
+              <strong>NYC Department of Sanitation</strong> — Software
+              Engineering Internship (June–Aug 2022)
+            </li>
+          </ul>
+        </section>
+
+        <section class="projects">
+          <h2>Projects</h2>
+
+          <div class="project">
+            <h3>
+              <a href="https://kennethc.me/Data-Driven-Article/" target="_blank"
+                >Data-Driven Article</a
+              >
+            </h3>
+            <p>
+              A D3.js + Vega-Lite project visualizing the impact of internet
+              broadband connectivity in Chattanooga's low-income communities
+              using interactive scatterplots and charts.
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>
+              <a
+                href="https://design-and-redesign-kennethc.glitch.me/"
+                target="_blank"
+                >Design and Redesign</a
+              >
+            </h3>
+            <p>
+              Visualized Boston College's major enrollment trends using Tableau
+              and redesigned historical charts to better communicate data.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
